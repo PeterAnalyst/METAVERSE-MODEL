@@ -26,12 +26,12 @@ Steps Taken
  
 **Step 1. (DATA CLEANING)**
 
-Data inspection and Cleaning: I did this by making sure there were no empty or missing values.
-Formatting Inconsistences: It's import that the formating for each colomns are consistent and has the correct data type
-Removed Duplicates
+i. Data inspection and Cleaning: It is important in making sure there are no empty or missing values.
+ii. Formatting Inconsistences: It's import that the formating for each colomns are consistent and has the correct data type
+iii. Removed Duplicates
 
 **Step 2. (Relationship Creation/Check)**
-One of the first thing to do is correlation formula firstt to check the relationship between quantitative data (in this case hour_of_day, amount, ip_prefix, login_frequency, session_duration) and still Carried out regression analysis but wasn't comfortable with the R-Suared value as it was considerably low.
+One of the first things to do is check possible relationship using correlation formula first to check the relationship between quantitative data (in this case hour_of_day, amount, ip_prefix, login_frequency, session_duration) and still Carried out regression analysis but wasn't comfortable with the R-Suared value as it was considerably low.
 
 Step 2. 
 
