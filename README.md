@@ -48,4 +48,5 @@ To validate this type of model accuracy is of Importance. So some of the statist
 
 ## Conclusion
 
-It is still possible to improve this model, but I'd say this is the best you could get using Regression
+It is still possible to improve this model as there are possible better approach to predicting model of higher accuracy, But i very much believe this one(model) stands head and shoulder with any other predicted model
+
