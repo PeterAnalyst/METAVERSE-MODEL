@@ -14,11 +14,11 @@
 3. What is the validation of the model?
 
 
-**1. What Model is best fit to carry-out this prediction and Why?**
+###1. What Model is best fit to carry-out this prediction and Why?
    
  The First step is deciding what machine learning model in excel to apply. I decided to use use  because  it is used to describe the relationships between a set of independent variables and the dependent variable. Since the intention is to analyze relationships between other independent variables (Other columns) with one dependent variable( i.e.. the Risk Score), _**Multiple Linear Regression**_ is what i will be using to Predict transactions with _high-risk scores_. [Read More on Why Linear Regression here](https://statisticsbyjim.com/regression/when-use-regression-analysis/)
 
-**2. Describe the steps taken including data preparation and model creation.**
+###2. Describe the steps taken including data preparation and model creation.
 
 These are the steps taken when building this model
 
@@ -31,12 +31,18 @@ ii. Formatting Inconsistences: It's import that the formating for each colomns a
 iii. Removed Duplicates
 
 **Step 2. (Relationship Creation/Check)**
-One of the first things to do is check possible relationship using correlation formula first to check the relationship between quantitative data (in this case hour_of_day, amount, ip_prefix, login_frequency, session_duration) and still Carried out regression analysis but wasn't comfortable with the R-Suared value as it was considerably low.
+One of the first things I did was to check for possible relationship between quantitative column(in this case hour_of_day, amount, ip_prefix, login_frequency, session_duration) by using the CORREL Formula and also carried out regression analysis but wasn't comfortable with the R-Suared value as it was considerably low.
 
-Step 2. 
+**Step 3. (Create Extra Columns)** 
 
-Then I created a dummy variable(ie. creating new columns and using conditional statements whose results are in the form 0 if false and 1 if true) with the qualitative columns to see how its related or affects the Risk Score. 
+Then I created a dummy variable(ie. creating new columns and using conditional statements whose results are in the form 0 if false and 1 if true) with the qualitative columns to see how its related or affects the Risk Score. For More understanding of dummy variable CLICK [Here](https://www.youtube.com/watch?v=BEapC8Sv8cA) 
 
-Step 3.
+**Step 4. (TEST, RETEST and TEST AGAIN 😒)**
 
- This was the most daunting step as did so many things to achieve 87% accuracy with my model. I tried creating a regression Model using both these dummy columns and the real columns and constantly removed each columns whose p-value is beyond 0.05 or gives a number error (i.e. hashtag#NUM!) note that I did not entirely remove them based on just the p-value or hashtag#NUM! error. I started by first taking the ones with the lowest co-efficient values and kept retesting until the p-Values where below 0.05 and R-squared and Adjusted R Square were at least 0.90. 
+This is the most tasking. I tried creating a regression Model using both these dummy columns and the real columns and constantly removed each columns whose p-value is beyond 0.05 or gives a number error (i.e. _**#NUM!**_) 
+**Note:** I did not entirely remove the columns based on just the p-value or _**#NUM!**_ error. I started by first taking the ones with the lowest co-efficient values and kept retesting until the p-Values where below 0.05 and R-squared and Adjusted R Square were at least 0.90. [Click read to Understand p-values](https://www.statology.org/linear-regression-p-value/) or [watch this video](https://www.youtube.com/watch?v=CL9MsExcKfU&list=PL-p9JpwN5NNGnXoGDMeF_M6LFUHsjGi0w)
+
+###3. What is the validation of the model?
+
+To validate this type of model accuracy is of Importance. So some of the statistical formulars i used was  Mean Absolute Percentage Error (MAPE) as it helps me to be sure the error i would get from the model will be minimal and I did get 13% means my Model is 87% Accurate
+
