@@ -70,6 +70,7 @@ Although it is still possible to improve this model as there are possibly better
 So high risk score depends on
 1. Age_group
 2. Transaction type
+   
 Judging from the results(i.e. the prediction) **Risk score is always high when age_group is either Veteran or new and when transactions_type is either scam or phishing**.
 Therefore one should lookout for these things in both Age_group and Transaction_type to decide the high risk score
 
