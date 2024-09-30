@@ -64,5 +64,5 @@ _**Note:** This is just a glimpse of the first 20 rows out of about 79 thousand 
 
 ![](RISK_VS_PREDICTED.PNG)
 
-It is still possible to improve this model as there are possible better approach to predicting model of higher accuracy, But i very much believe this one(model) stands heads and shoulder with any other predicted model as evidenced in the image above
+Although it is still possible to improve this model as there are possibly better approach to predicting model with higher accuracy, But i very much believe this one(model) stands heads and shoulder with any other predicted model as evidenced in the image above. Also judging from the results(i.e. the prediction), **Risk score is always high when age_group is either Veteran or new and when transactions_type is either scam or phishing**
 
