@@ -43,7 +43,7 @@ Then I created a dummy variable(ie. creating new columns and using conditional s
  :----:| ----:| ----:| ----:|
 ![](TEST1.PNG) | ![](TEST2.PNG) | ![](TEST3.PNG) | ![](Final_Test.PNG)
 
-_**Note:** I did way more than 7 testing. I am just showing you a few of the images._
+_**Note:** I did way more than 14 testing. I am just showing you a few of the images._
 
 This is the most tasking. I tried creating a regression Model using both these dummy columns and the real columns and constantly removed each columns whose p-value is beyond 0.05 or gives a number error (i.e. _**#NUM!**_) 
 **Note:** I did not entirely remove the columns based on just the p-value or _**#NUM!**_ error. I started by first taking the ones with the lowest co-efficient values and kept retesting until the p-Values where below 0.05 and R-squared and Adjusted R Square were at least 0.90. [Click read to Understand p-values](https://www.statology.org/linear-regression-p-value/) or [watch this video](https://www.youtube.com/watch?v=CL9MsExcKfU&list=PL-p9JpwN5NNGnXoGDMeF_M6LFUHsjGi0w)
